@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import {
 	StyleSheet,
-	Text,
 	View,
 } from "react-native";
+
+import Input from "../components/Input";
 
 class SearchBox extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text>SearchBox</Text>
+				<Input
+					label={"SearchBox"}
+					placeholder={"Let's search something..."}
+				/>
 			</View>
 		);
 	}
