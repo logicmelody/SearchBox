@@ -7,10 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "immutable": "^3.8.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
     "redux-observable": "^1.0.0",
     "rxjs": "^6.2.2"
   },
