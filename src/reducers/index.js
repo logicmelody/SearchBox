@@ -2,8 +2,8 @@ import { combineReducers } from "redux";
 
 import searchBox from "./search-box-reducer";
 
-const reducer = combineReducers({
+const reducers = combineReducers({
 	searchBox,
 });
 
-export default reducer;
+export default reducers;
