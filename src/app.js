@@ -8,7 +8,7 @@ import reducers from "./reducers";
 
 class App extends Component {
 	render() {
-		const store = createStore(reducers, {}, applyMiddleware(loggerMiddleWare));
+		const store = configureStore();
 
 		return (
 			<Provider store={store}>
@@ -16,6 +16,12 @@ class App extends Component {
 			</Provider>
 		);
 	}
+}
+
+function configureStore() {
+	const store = createStore(reducers, {}, applyMiddleware(loggerMiddleWare));
+
+	return store;
 }
 
 export default App;
